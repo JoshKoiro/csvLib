@@ -21,7 +21,7 @@ exports.makeArray = makeArray;
 //Micro functions --------------------------------
 
 function getRow(data){
-  console.log("getRow(data): data = " + data);
+  console.log(data);
   //var rows = data.split('\r\n');
   //FIXME Find out why data is undefined
   //return rows;
