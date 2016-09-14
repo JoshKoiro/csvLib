@@ -3,8 +3,9 @@ var exports = module.exports;
 //Macro functions ---------------------------------
 
 function getHeaders(table){
-  var headers = 0;
-  console.log('getHeaders function is working');
+  var rows = getRow(table);
+  var header = rows[0];
+  var headers = header.split(',');
   //TODO get table headers
   return headers;
 }
@@ -20,8 +21,10 @@ exports.makeArray = makeArray;
 //Micro functions --------------------------------
 
 function getRow(data){
-  //TODO convert table into array of rows
-  return rows;
+  console.log("getRow(data): data = " + data);
+  //var rows = data.split('\r\n');
+  //FIXME Find out why data is undefined
+  //return rows;
 }
 exports.getRow = getRow;
 
