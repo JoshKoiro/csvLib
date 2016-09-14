@@ -1,13 +1,11 @@
-const fs = require('fs');
+const readFile = require('fs-readfile-promise');
+
+const onFulfilled = buffer => console.log(buffer.toString());
+const onRejected = err => console.log('Cannot read the file.');
 
 var read = function(file){
-  fs.readFile(file,function(err,data){
-    if(err){
-      return console.log(err);
-    }
-    console.log('import success!');
-    return data;
-    });
+  readFile(file).then(onFulfilled, onRejected);
 };
+
 var exports = module.exports;
 exports.read = read;
