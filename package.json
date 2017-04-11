@@ -2,7 +2,7 @@
   "name": "csvLib",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "tester.js",
   "scripts": {
     "test": "node test.js",
     "start": "node script.js"
@@ -10,7 +10,5 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fs-readfile-promise": "^3.0.0",
-    "vorpal": "^1.11.4"
   }
 }
